@@ -1,6 +1,6 @@
 #!/bin/bash
 
-¼xdg-open ./PrinterSettings.png
+#xdg-open ./PrinterSettings.png
 
 echo -n "Press [ENTER] if you changed the settings."
 read answer
