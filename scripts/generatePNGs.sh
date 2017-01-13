@@ -57,20 +57,26 @@ counter=0
    xdotool key Ctrl+Shift+e
    sleep 1.2
 
-  xdotool click 1
+  #xdotool click 1
   sleep 0.3
   xdotool key Ctrl+a
 #   xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
 #   sleep 2
-
-   xdotool type "/home/claude/Daten.2017/myLife/Tagebuch/2017/januar/Shrink-Disorder-Tarot/png/$1/"
+pngpath=$(dirname $(pwd))/png
+#echo $pngpath
+   sleep 1
+   xdotool key Alt+b
+   sleep 1
+   xdotool type "$pngpath/$1/"
    xdotool type $(basename $i .svg)
    echo $i
-   sleep 0.3
+   sleep 1
    xdotool type '.png'
    echo png
-   sleep 3
+   sleep 1
    xdotool key KP_Enter
+   sleep 0.5
+   xdotool key Alt+e
    echo enter
    sleep 1
    xdotool key Alt+F4
