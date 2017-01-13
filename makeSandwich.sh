@@ -1,5 +1,14 @@
 #!/bin/bash
 
+mkdir -p pdf/DE
+mkdir -p pdf/EN
+mkdir -p png/DE
+mkdir -p png/EN
+mkdir -p jpg/DE
+mkdir -p jpg/EN
+mkdir -p png/DE
+mkdir -p png/EN
+
 
 cd ./scripts
 ./install.sh
