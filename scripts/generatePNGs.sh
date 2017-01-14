@@ -73,7 +73,7 @@ for i in $(cat ./PNGs.txt)
   sleep 1
   xdotool key KP_Enter
   sleep 1
-  xdotool key KP_Enter
+  xdotool key Alt+e
   sleep 1
   xdotool key Alt+w
   sleep 1
