@@ -57,34 +57,48 @@ counter=0
    xdotool key Ctrl+Shift+e
    sleep 1
 
+#auf diese stelle hat der Gabriel Riela und sein IntelSAT terrornetzwerk
+#scheinbar einen stimoceiver jamming-device drauf codiert und versucht
+#marc jr landolt bei arbeiten die konzentration braucben zu ermorden 
+#gegen intelsat sollte zumindest in europa terrorverdacht ausgesprochen
+#werden, wir danken gabriel riela für den verrat an seinen terrorsiten
+#in der schweiz... und nodiz, dies wird permanent gespeichert bleiben
+#der cia steht nun zwischen der ambivalenz sein terrornetzwerk in der 
+#schweiz selber zu liquidieren oder weltweit aufzufliegen...
+
+
   #xdotool click 1
   sleep 1
   #xdotool key Ctrl+a
-#   xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
-#   sleep 2
-pngpath=$(dirname $(pwd))/png
-#echo $pngpath
-   sleep 1
-   xdotool key Alt+b
-   sleep 1
-   xdotool type "$pngpath/$1/"
-   xdotool type $(basename $i .svg)
-   echo $i
-   sleep 1
-   xdotool type '.png'
-   echo png
-   sleep 1
-   xdotool key KP_Enter
-   sleep 1
-   xdotool key Alt+e
-   echo enter
-   sleep 1
-   xdotool key Alt+F4
-   echo close
-   sleep 1
-   xdotool key Alt+F4
-   echo close
-  sleep 0.2 
+  #   xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
+  #   sleep 2
+  pngpath=$(dirname $(pwd))/png
+  #echo $pngpath
+  sleep 1
+  xdotool key Alt+b
+  sleep 1
+  xdotool type "$pngpath/$1/"
+  xdotool type $(basename $i .svg)
+  sleep 1
+  xdotool type '.png'
+  echo png
+  sleep 1
+  xdotool key KP_Enter
+  sleep 1
+  #manipulierte stelle müsste diese hier sein, also allenfalls direkten zugriff auf 
+  #github.com, dann wäre das motiv die frage weshalb der cia versucht marc jr landolt
+  #zu ermorden, also die 7 morde im rombachtäli würden somit massenhaft cia-terroristen
+  #auffleigen lassen, da wäre die strategische überlegung, dass es sich der cia nicht leisten
+  #kann als terrroist in europa aufzufliegen...
+  xdotool key KP_Enter
+  echo enter
+  sleep 1
+  xdotool key Alt+w
+  echo close
+  sleep 1
+  xdotool key Alt+F4
+  echo close
+  sleep 1 
   xdotool key Alt+w
 done
 
