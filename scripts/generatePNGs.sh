@@ -50,7 +50,7 @@ counter=0
    echo $conter
  
    /usr/bin/inkscape $i &
-   sleep 7
+   sleep 6
    xdotool key Ctrl+Alt+a
    echo ctrl-alt-a
    sleep 1
@@ -75,13 +75,13 @@ pngpath=$(dirname $(pwd))/png
    echo png
    sleep 1
    xdotool key KP_Enter
-   sleep 0.5
+   sleep 1
    xdotool key Alt+e
    echo enter
    sleep 1
    xdotool key Alt+F4
    echo close
-   sleep 0.2
+   sleep 1
    xdotool key Alt+F4
    echo close
   sleep 0.2 
