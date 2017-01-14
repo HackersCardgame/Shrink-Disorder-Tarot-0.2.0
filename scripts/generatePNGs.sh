@@ -99,7 +99,7 @@ counter=0
   xdotool key Alt+F4
   echo close
   sleep 1 
-  xdotool key Alt+w
+  xdotool key Alt+F4
 done
 
 
