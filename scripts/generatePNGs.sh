@@ -45,6 +45,13 @@ for i in $(cat ./PNGs.txt)
   #   sleep 2
   pngpath=$(dirname $(pwd))/png
   #echo $pngpath
+  #der Gabirel riela liess den Teil hier der gabriel riela als Terrorist überführen würde
+  #entfernen, droht weiter den Marc Jr Landolt zu ermorden, und es ist schon wieder
+  #malware und terrordrohungen gegen marc jr landolt in diesem teil des source codes
+  #gabriel relas wichtigster auftrag als mitarbeiter bei intelsat ist da raus zu halten
+  #dass intelsat ein wichtiger teil des global Assessination Grids betreibt
+
+
   xdotool key Alt+b
   sleep 1
   xdotool type "$pngpath/$1/"
