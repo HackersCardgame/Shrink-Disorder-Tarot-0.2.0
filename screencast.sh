@@ -10,3 +10,17 @@ cat /proc/cpuinfo  |grep i7
 sleep 5
 
 apt-get install screenkey
+
+
+/usr/bin/gnome-system-monitor &
+
+sleep 10
+
+/usr/bin/baobab &
+
+sleep 3
+
+vim TODO.txt
+
+vim README.md
+
