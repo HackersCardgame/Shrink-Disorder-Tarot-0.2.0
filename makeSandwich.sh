@@ -1,13 +1,47 @@
 #!/bin/bash
 
-mkdir -p pdf/DE
-mkdir -p pdf/EN
-mkdir -p png/DE
-mkdir -p png/EN
-mkdir -p jpg/DE
-mkdir -p jpg/EN
-mkdir -p png/DE
-mkdir -p png/EN
+clear
+
+if  [ "$1" = "" ]
+then
+echo -e "
+\e[39m
+Usage:
+------
+To generate the Spanish deck type: \e[36m./makeSandwich.sh ES\e[39m
+To generate the Englsih deck type: \e[36m./makeSandwich.sh EN\e[39m
+To generate the German deck type: \e[36m./makeSandwich.sh DE\e[39m
+
+to generate all decks thyt will (b)lock computer for about 5h
+type \e[36m./makeSandwich.sh all\e[39m
+
+
+"
+exit 0
+fi
+
+
+if  [ "$1" = "all" ]
+then
+echo -e "
+
+making all sandwiches, go and do something else...
+
+"
+find ./cards/ -type d -maxdepth 1 | grep -v ^.$ |cut -c 9-  |grep -v ^$ >all.txt
+
+for i in $(cat all.txt)
+do
+ echo $i
+done
+
+fi
+exit 0
+
+mkdir -p pdf/$1
+mkdir -p png/$1
+mkdir -p jpg/$1
+mkdir -p pdf/$1
 
 
 cd ./scripts
@@ -17,13 +51,9 @@ cd ./scripts
 cd ../png/
 ./createJPGs.sh
 cd ../scripts
-./generateA4.sh DE
-./generateA6.sh DE
-./generateA4.sh EN
-./generateA6.sh EN
-#./scripts/printPDF.sh
-#./printAll.sh DE
-#./printAll.sh EN
+./generateA4.sh $1
+./generateA6.sh $1
+./generatePDFs.sh $1
 
 echo "
 now you can got to eg the directory assembled/DE/A6 and run ./printAll.sh
