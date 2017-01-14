@@ -2,24 +2,27 @@
 
 clear
 
+
+find ./cards/ -maxdepth 1 -type d| grep -v ^.$ |cut -c 9-  |grep -v ^$ >all.txt
+
 if  [ "$1" = "" ]
 then
 echo -e "
 \e[39m
 Usage:
 ------
-To generate the Spanish deck type: \e[36m./makeSandwich.sh ES\e[39m
-To generate the Englsih deck type: \e[36m./makeSandwich.sh EN\e[39m
-To generate the German deck type: \e[36m./makeSandwich.sh DE\e[39m
+To generate the Spanish deck type: \e[36m./makeSandwich.sh \e[35mES\e[39m
+To generate the Englsih deck type: \e[36m./makeSandwich.sh \e[35mEN\e[39m
+To generate the German deck type: \e[36m./makeSandwich.sh \e[35mDE\e[39m
 
 to generate all decks thyt will (b)lock computer for about 5h
 type \e[36m./makeSandwich.sh all\e[39m
 
-
+available languages: \e[35m
+$(cat all.txt) \e[39m
 "
 exit 0
 fi
-
 
 if  [ "$1" = "all" ]
 then
@@ -32,11 +35,14 @@ find ./cards/ -type d -maxdepth 1 | grep -v ^.$ |cut -c 9-  |grep -v ^$ >all.txt
 
 for i in $(cat all.txt)
 do
- echo $i
+ echo ./makeSandwich.sh $i
 done
 
 fi
 exit 0
+
+
+
 
 mkdir -p pdf/$1
 mkdir -p png/$1
