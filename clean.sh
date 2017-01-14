@@ -14,6 +14,6 @@ find png/ -type f -exec rm '{}' \;
 
 echo "
 
-  you shold reboot now or remove the clipit manually from the ram
+  you shold reboot now or remove the clipit manually from the RAM
 
 "

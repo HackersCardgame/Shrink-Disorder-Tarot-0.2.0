@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get install kazam
+sudo apt-get install kazam
 
 df -h
 sleep 5
@@ -9,7 +9,7 @@ sleep 5
 cat /proc/cpuinfo  |grep i7
 sleep 5
 
-apt-get install screenkey
+sudo apt-get install screenkey
 
 
 /usr/bin/gnome-system-monitor &
