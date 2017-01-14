@@ -16,36 +16,6 @@ To generate the German  A6 sheets: \e[36m./generateA6.sh DE\e[39m
 exit 0
 fi
 
-25c25
-< find ./cards -name "*.svg" >./A6.txt
----
-> find ./cards.EN -name "*.svg" >./A6.txt
-34c34
-<      inkscape ./assembled/A6/templateA6.svg &
----
->      inkscape ./assembled.EN/A6/templateA6.svg &
-#!/bin/bash
-
-clear
-
-echo -e "\e[31m * You need to install the fonts (./fonts/install.sh),
- * to close all instances of inkscape
- * and you maybe have to remove the clipit package (sudo apt-get remove clipit) temporarly\e[0m
- * for the moment it runs only on GNOME
-"
-echo -n "Press [ENTER] if you changed the settings."
-#read answer
-
-echo
-
-echo -n "install/remove required/unrequired debian jessie packages (y/n)? "
-#read answer
-if echo "$answer" | grep -iq "^y" ;then
-sudo apt-get install xdotool figlet
-sudo apt-get remove clipit
-else
-    echo not installing packages
-fi
 
 
 find ../cards/$1 -name "*.svg" >./A6_$1.txt

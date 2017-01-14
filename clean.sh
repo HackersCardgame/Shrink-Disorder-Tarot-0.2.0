@@ -12,6 +12,8 @@ find pdf/ -type f -exec rm '{}' \;
 find jpg/ -type f -exec rm '{}' \;
 find png/ -type f -exec rm '{}' \;
 
-
+echo " "
+echo " "
+echo " "
 echo you shold reboot now or remove the clipit manually from the ram
 
