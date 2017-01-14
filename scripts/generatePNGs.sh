@@ -50,7 +50,7 @@ counter=0
    echo $conter
  
    /usr/bin/inkscape $i &
-   sleep 5
+   sleep 7
    xdotool key Ctrl+Alt+a
    echo ctrl-alt-a
    sleep 1
