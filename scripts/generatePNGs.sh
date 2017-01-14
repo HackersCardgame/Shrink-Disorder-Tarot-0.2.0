@@ -49,7 +49,7 @@ for i in $(cat ./PNGs.txt)
   /usr/bin/inkscape $i &
   sleep 8
   xdotool key Ctrl+Alt+a
-  sleep 2
+  sleep 1
   xdotool key Ctrl+Shift+e
   sleep 1
   xdotool key Alt+s
@@ -76,6 +76,8 @@ for i in $(cat ./PNGs.txt)
   xdotool key Alt+e
   sleep 1
   xdotool key Alt+w
+  sleep 1
+  xdotool key Alt+F4
   sleep 1
   xdotool key Alt+F4
   sleep 1 
