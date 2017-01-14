@@ -58,8 +58,8 @@ counter=0
    sleep 1.2
 
   #xdotool click 1
-  sleep 0.3
-  xdotool key Ctrl+a
+  sleep 1
+  #xdotool key Ctrl+a
 #   xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
 #   sleep 2
 pngpath=$(dirname $(pwd))/png
