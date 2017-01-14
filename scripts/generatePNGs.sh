@@ -53,7 +53,7 @@ counter=0
    sleep 5
    xdotool key Ctrl+Alt+a
    echo ctrl-alt-a
-   sleep 0.2
+   sleep 1
    xdotool key Ctrl+Shift+e
    sleep 1.2
 
