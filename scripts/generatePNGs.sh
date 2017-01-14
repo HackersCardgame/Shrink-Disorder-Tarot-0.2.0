@@ -56,7 +56,7 @@ for i in $(cat ./PNGs.txt)
   sleep 1
   xdotool key Alt+e
   sleep 3
-  xdotool key Alt+w
+  xdotool key Ctrl+w
   sleep 1
   xdotool key Alt+F4
   sleep 1
