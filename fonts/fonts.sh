@@ -4,7 +4,11 @@ echo $0
 
 find . -name '*.zip' -exec unzip -n '{}'  -d ./unzipped/ \;
 
+mkdir ttf
+
 cd ./unzipped
+
+
 
 find . -name '*.TTF' -exec mv '{}' ../ttf/ \;
 find . -name '*.ttf' -exec mv '{}' ../ttf/ \;
