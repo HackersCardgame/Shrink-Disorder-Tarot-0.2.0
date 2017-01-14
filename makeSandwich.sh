@@ -1,6 +1,5 @@
 #!/bin/bash
 
-clear
 
 
 find ./cards/ -maxdepth 1 -type d| grep -v ^.$ |cut -c 9-  |grep -v ^$ >all.txt
@@ -15,8 +14,8 @@ To generate the Spanish deck type: \e[36m./makeSandwich.sh \e[35mES\e[39m
 To generate the Englsih deck type: \e[36m./makeSandwich.sh \e[35mEN\e[39m
 To generate the German deck type: \e[36m./makeSandwich.sh \e[35mDE\e[39m
 
-to generate all decks thyt will (b)lock computer for about 5h
-type \e[36m./makeSandwich.sh all\e[39m
+to generate all decks that will (b)lock computer for about 5h
+type \e[36m./makeSandwich.sh \e[35mall\e[39m
 
 available languages: \e[35m
 $(cat all.txt) \e[39m
@@ -26,6 +25,7 @@ fi
 
 if  [ "$1" = "all" ]
 then
+
 echo -e "
 
 making all sandwiches, go and do something else...
@@ -38,11 +38,15 @@ do
 done
 
 fi
-exit 0
 
 if $(grep -q $1 all.txt)
- then echo $1
-else
+ then 
+   echo $1
+ else
+  echo -e "
+
+ \e[33m language not available\e[39m"
+ ./makeSandwich.sh
  exit 1
 fi
 
