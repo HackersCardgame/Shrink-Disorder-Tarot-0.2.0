@@ -31,7 +31,6 @@ echo -e "
 making all sandwiches, go and do something else...
 
 "
-find ./cards/ -type d -maxdepth 1 | grep -v ^.$ |cut -c 9-  |grep -v ^$ >all.txt
 
 for i in $(cat all.txt)
 do
@@ -41,7 +40,11 @@ done
 fi
 exit 0
 
-
+if $(grep -q $1 all.txt)
+ then echo $1
+else
+ exit 1
+fi
 
 
 mkdir -p pdf/$1
