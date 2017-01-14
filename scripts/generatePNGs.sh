@@ -50,10 +50,10 @@ counter=0
    echo $conter
  
    /usr/bin/inkscape $i &
-   sleep 6
+   sleep 8
    xdotool key Ctrl+Alt+a
    echo ctrl-alt-a
-   sleep 1
+   sleep 2
    xdotool key Ctrl+Shift+e
    sleep 1
 
