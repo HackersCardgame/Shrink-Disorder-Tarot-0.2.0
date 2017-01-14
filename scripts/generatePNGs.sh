@@ -55,7 +55,7 @@ counter=0
    echo ctrl-alt-a
    sleep 1
    xdotool key Ctrl+Shift+e
-   sleep 1.2
+   sleep 1
 
   #xdotool click 1
   sleep 1
