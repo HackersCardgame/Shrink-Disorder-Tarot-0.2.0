@@ -45,8 +45,9 @@ if $(grep -q $1 all.txt)
  else
   echo -e "
 
- \e[33m language not available\e[39m"
+   ⇨  \e[1m language \e[4mnot\e[24m available"
  ./makeSandwich.sh
+  echo -e "\e[21m"
  exit 1
 fi
 
