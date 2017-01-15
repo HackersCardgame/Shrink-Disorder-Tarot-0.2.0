@@ -60,11 +60,8 @@ mkdir -p pdf/$1
 
 cd ./scripts
 ./install.sh
-./generatePNGs.sh DE
-./generatePNGs.sh EN
-cd ../png/
-./createJPGs.sh
-cd ../scripts
+./generatePNGs.sh $1
+./convert2JPGs.sh $1
 ./generateA4.sh $1
 ./generateA6.sh $1
 ./generatePDFs.sh $1
