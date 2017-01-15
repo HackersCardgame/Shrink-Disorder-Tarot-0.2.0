@@ -1,24 +1,17 @@
 #!/bin/sh
-find ../png -type d -maxdepth 1 | grep -v ^.$ |cut -c 3- >./languages.txt
 
-for l in $(cat ./languages.txt)
-do
-  echo  ../$l/ => ../jpg/$l/
-  mkdir --parents ../jpg/$l
+  echo  "../$1/ => ../jpg/$1/"
+  mkdir --parents ../jpg/$1
 
 
-  find ./$l/ -name '*.png' >temp.txt
+  find ../png/$l/ -name '*.png' >./jpg_$1.txt
 
-  for f in $(cat ./temp.txt)
+  for f in $(cat ./jpg_$1.txt)
   do
     echo $f
     echo convert -format jpg -quality 50 $(dirname $f)/$(basename $f .png).png ../jpg/$(dirname $f)/$(basename $f .png).jpg
-    convert -format jpg -quality 50 $(dirname $f)/$(basename $f .png).png ../jpg/$(dirname $f)/$(basename $f .png).jpg
+ echo   convert -format jpg -quality 50 $(dirname $f)/$(basename $f .png).png ../jpg/$(dirname $f)/$(basename $f .png).jpg
   done
 
 
-done
-
-rm temp.txt
-rm languages.txt
 
