@@ -66,9 +66,9 @@ cd ./scripts
 ./generateA6.sh $1
 ./generatePDFs.sh $1
 
-echo "
+echo -e "
 now you can got to eg the directory assembled/DE/A6 and run ./printAll.sh
-to print your German (DE) cards on A6 Cards on your default printer 
+to print your German (DE) cards on A6 sheets on your \e1mdefault printer\e21m 
 (select first the correct printer as default, you must be su to do so)
 
 or cd assembled/EN/A4 ./printAll.sh to print all your cards on A4 Sheets
