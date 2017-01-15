@@ -23,7 +23,9 @@ read answer
 if echo "$answer" | grep -iq "^y" 
  then
   sudo apt-get install inkscape
-  sudo apt-get install xdotool figlet
+  sudo apt-get install xdotool
+  sudo apt-get install figlet
+  sudo apt-get install cups-pdf
   sudo apt-get remove clipit
 
   cd ./fonts
