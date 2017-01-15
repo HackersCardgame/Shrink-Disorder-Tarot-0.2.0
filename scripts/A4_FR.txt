@@ -1,0 +1,2 @@
+../cards/FR/technologies/t1.svg
+../cards/FR/algorithms/a1.svg

@@ -16,7 +16,8 @@ To generate the German  A6 sheets: \e[36m./generateA6.sh DE\e[39m
 exit 0
 fi
 
-
+#open an inkscape instance so that the libraries are already in RAM
+inkscape &
 
 find ../cards/$1 -name "*.svg" >./A6_$1.txt
 
