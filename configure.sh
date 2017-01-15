@@ -9,9 +9,12 @@ echo -e "
   * script will uninstall the clipit package (sudo apt-get remove clipit)
   * for the moment it runs on gnome-shell only
   * script needs sudo (apt-get install sudo) 
-  * and an entry in \e[33m/etc/sudoers\e[0m file, you can copy the line 
+  * and an entry in \e[33m/etc/sudoers\e[0m file,
 
-\e[33m    \"root	ALL=(ALL:ALL) ALL\"\e[0m
+ you can \e[33mcopy\e[0m the line from the root user to your user 
+
+\e[33m    root	ALL=(ALL:ALL) ALL\e[0m to eg.
+\e[33m    marc	ALL=(ALL:ALL) ALL\e[0m
 
 "
 echo -n "install/remove required/unrequired debian jessie packages (y/n)? "
