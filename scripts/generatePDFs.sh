@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 if  [ "$1" = "" ]
 then
@@ -15,19 +15,15 @@ fi
 
 
 mkdir -p ~/PDF/oldPDFs
-#mv ~/PDF/* ~/PDF/oldPDFs
+mv ~/PDF/* ~/PDF/oldPDFs
 
-for i in $(ls ~/PDF/*.pdf )
- do
-  echo mv $i $(echo $i | sed 's/Print_//g')
-
-done
 
 find ../assembled/$1/A4 -name "*.svg" >./pdf_$1_A4.txt
 find ../assembled/$1/A6 -name "*.svg" >./pdf_$1_A6.txt
 
-mkdir -r ../pdf/$1/A4
-mkdir -r ../pdf/$1/A6
+echo making directories
+mkdir -p ../pdf/$1/A4
+mkdir -p ../pdf/$1/A6
 
 
  /usr/bin/inkscape &
@@ -40,8 +36,7 @@ for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
  for i in $(cat $j)
   do
   echo i: $i
-echo "
-  exit 0 
+
    /usr/bin/inkscape $i &
 
    sleep 5
@@ -62,20 +57,18 @@ echo "
    xdotool key alt+F4
 
    echo printed $i
-"
+
   done
 
-if  [ "$1" = "./pdf_$1_A4.txt" ]
+echo $j 
+
+if  [ "$j" = "./pdf_$1_A4.txt" ]
  then
-  echo mv ~/PDF/*.pdf ../pdf/$1/A4
+  mv ~/PDF/*.pdf ../pdf/$1/A4
  else
-  echo mv ~/PDF/*.pdf ../pdf/$1/A6
+  mv ~/PDF/*.pdf ../pdf/$1/A6
 fi
 
  done
 
-for i in $(ls ~/PDF )
- do
-  echo $i
-done
 
