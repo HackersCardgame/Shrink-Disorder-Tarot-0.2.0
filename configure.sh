@@ -9,7 +9,8 @@ echo -e "
   * script will uninstall the clipit package (sudo apt-get remove clipit)
   * for the moment it runs on gnome-shell only
   * script needs sudo (apt-get install sudo) 
-    ...and an entry in \e[33m/etc/sudoers\e[0m file, you can copy the line 
+  * and an entry in \e[33m/etc/sudoers\e[0m file, you can copy the line 
+
 \e[33m    \"root	ALL=(ALL:ALL) ALL\"\e[0m
 
 "
