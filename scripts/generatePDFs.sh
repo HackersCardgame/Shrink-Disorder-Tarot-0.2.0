@@ -60,6 +60,9 @@ for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
 
   done
 
+ echo my cups-pdf printer is slow, so we wait here 1 Min
+ sleep 60
+
  echo moving $j 
 
  if  [ "$j" = "./pdf_$1_A4.txt" ]
