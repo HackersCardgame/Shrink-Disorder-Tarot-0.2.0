@@ -15,7 +15,7 @@ find . -name '*.ttf' -exec mv '{}' ../ttf/ \;
 
 #somehow this bitstream charter went into my system fonts...
 find . -name '*.afm' -exec mv '{}' ../ttf/ \;
-find . -name '*.bfp' -exec mv '{}' ../ttf/ \;
+find . -name '*.pfb' -exec mv '{}' ../ttf/ \;
 
 cd ..
 
