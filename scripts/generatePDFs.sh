@@ -60,15 +60,15 @@ for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
 
   done
 
-echo $j 
+ echo moving $j 
 
-if  [ "$j" = "./pdf_$1_A4.txt" ]
- then
-  mv ~/PDF/*.pdf ../pdf/$1/A4
- else
-  mv ~/PDF/*.pdf ../pdf/$1/A6
-fi
+ if  [ "$j" = "./pdf_$1_A4.txt" ]
+  then
+   mv ~/PDF/*.pdf ../pdf/$1/A4
+  else
+   mv ~/PDF/*.pdf ../pdf/$1/A6
+ fi
 
- done
+done
 
 
