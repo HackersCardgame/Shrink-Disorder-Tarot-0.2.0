@@ -1,7 +1,5 @@
 #!/bin/bash
 
-clear
-
 if  [ "$1" = "" ]
 then
 echo -e "
@@ -75,5 +73,6 @@ counter=0
      sleep 1.5
      xdotool key Alt+F4
    fi
+   echo $file
   done
 

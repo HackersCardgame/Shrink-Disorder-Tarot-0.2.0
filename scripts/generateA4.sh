@@ -1,6 +1,5 @@
 #!/bin/bash
 
-clear
 
 if  [ "$1" = "" ]
 then

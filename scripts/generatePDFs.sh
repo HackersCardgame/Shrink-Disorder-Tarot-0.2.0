@@ -1,8 +1,22 @@
 #!/bin/bash
 
+if  [ "$1" = "" ]
+then
+echo -e "
+\e[39m
+Usage:
+------
+To generate the Enlgish PDF sheets: \e[36m./generateA6.sh EN\e[39m
+To generate the German  PDF sheets: \e[36m./generateA6.sh DE\e[39m
+
+"
+exit 0
+fi
+
+
 
 find ./assembled/$1/A4 -name "*.svg" >./pdf_$1.txt
-find ./assembled/$1/A6 -name "*.svg" >./pdf_$1.txt
+find ./assembled/$1/A6 -name "*.svg" >>./pdf_$1.txt
 
 
  /usr/bin/inkscape &
