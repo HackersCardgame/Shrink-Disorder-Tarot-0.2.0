@@ -30,20 +30,11 @@ cd ../fonts
 cd ..
 
 echo -e "\e[34m"
-figlet packages / fonts installed
+
+fonts (maybe) installed
 
 else
     echo not installing packages
 fi
-echo -e "\e[0m"
 
-echo you can now edit cards on your debian system by hand or fix my language speaksing mistakes by running ./editMultiLang.sh
-echo
-echo -e "or you can generate all German cards with \e[33m./generateA4.sh DE\e[0m for A4 sheets"
-echo -e "or you can generate all English cards with \e[33m./generateA6.sh EN\e[0m for A6 sheets"
-echo
-echo -e "or you can print all English A4 cards with \e[33m./assembled/A4/EN/printAll.sh\e[0m"
-echo -e "or you can print German all A6 cards with \e[33m./assembled/A6/DE/printAll.sh\e[0m"
-echo
-echo
 
