@@ -1,0 +1,13 @@
+../cards/FR/technologies/t2.svg
+../cards/FR/technologies/t7.svg
+../cards/FR/technologies/t4.svg
+../cards/FR/technologies/t10.svg
+../cards/FR/technologies/t9.svg
+../cards/FR/technologies/t5.svg
+../cards/FR/technologies/t3.svg
+../cards/FR/technologies/t8.svg
+../cards/FR/technologies/t6.svg
+../cards/FR/technologies/t1.svg
+../cards/FR/psychiatrists/p5.svg
+../cards/FR/chemicals/c2.svg
+../cards/FR/algorithms/a1.svg
