@@ -22,19 +22,26 @@ for i in $(ls ~/PDF/*.pdf )
   echo mv $i $(echo $i | sed 's/Print_//g')
 
 done
-exit 0
 
-find ../assembled/$1/A4 -name "*.svg" >./pdf_$1.txt
-find ../assembled/$1/A6 -name "*.svg" >>./pdf_$1.txt
+find ../assembled/$1/A4 -name "*.svg" >./pdf_$1_A4.txt
+find ../assembled/$1/A6 -name "*.svg" >./pdf_$1_A6.txt
+
+mkdir -r ../pdf/$1/A4
+mkdir -r ../pdf/$1/A6
 
 
  /usr/bin/inkscape &
 
 counter=0
 
- for i in $(cat ./pdf_$1.txt)
+for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
+ do
+ echo j: $j
+ for i in $(cat $j)
   do
- 
+  echo i: $i
+echo "
+  exit 0 
    /usr/bin/inkscape $i &
 
    sleep 5
@@ -55,8 +62,17 @@ counter=0
    xdotool key alt+F4
 
    echo printed $i
-
+"
   done
+
+if  [ "$1" = "./pdf_$1_A4.txt" ]
+ then
+  echo mv ~/PDF/*.pdf ../pdf/$1/A4
+ else
+  echo mv ~/PDF/*.pdf ../pdf/$1/A6
+fi
+
+ done
 
 for i in $(ls ~/PDF )
  do
