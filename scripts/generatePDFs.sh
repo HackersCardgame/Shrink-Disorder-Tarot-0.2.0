@@ -39,7 +39,7 @@ for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
 
    /usr/bin/inkscape $i &
 
-   sleep 5
+   sleep 10
    xdotool key ctrl+p
    sleep 0.8
    xdotool key Right Right Right Right 
@@ -60,7 +60,10 @@ for j in $(echo "./pdf_$1_A4.txt" "./pdf_$1_A6.txt")
 
   done
 
- echo my cups-pdf printer is slow, so we wait here 1 Min
+ echo -e "
+
+          my cups-pdf printer is slow, so we wait here 2 Min
+"
  sleep 60
 
  echo moving $j 
