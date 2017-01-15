@@ -14,9 +14,18 @@ exit 0
 fi
 
 
+mkdir -p ~/PDF/oldPDFs
+#mv ~/PDF/* ~/PDF/oldPDFs
 
-find ./assembled/$1/A4 -name "*.svg" >./pdf_$1.txt
-find ./assembled/$1/A6 -name "*.svg" >>./pdf_$1.txt
+for i in $(ls ~/PDF/*.pdf )
+ do
+  echo mv $i $(echo $i | sed 's/Print_//g')
+
+done
+exit 0
+
+find ../assembled/$1/A4 -name "*.svg" >./pdf_$1.txt
+find ../assembled/$1/A6 -name "*.svg" >>./pdf_$1.txt
 
 
  /usr/bin/inkscape &
@@ -48,4 +57,9 @@ counter=0
    echo printed $i
 
   done
+
+for i in $(ls ~/PDF )
+ do
+  echo $i
+done
 
