@@ -33,7 +33,7 @@ Probleme zum ganzen Spiel
 
 * allenfalls über ein gif/jpg/png/pdf zum drucken, dann wärs auch für windows brauchbar dann wäre die hürde für die jüngeren ungeborenen Pinguine kleiner oder ein DOS SCRIPT oder POWERshell
 
-☐ 50% Card Generator Software 
+☐ 60% Card Generator (Software) scripts 
  => ev svg Library oder die Library von inkskape etc...
  => ev als deb mit einem Grundstock von Karten / Vorlagen / Beispielen
 
