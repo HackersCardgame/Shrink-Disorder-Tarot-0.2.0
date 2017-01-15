@@ -26,7 +26,7 @@ cp ./ttf/*.TTF ~/.fonts
 
 
 cp ./ttf/*.afm ~/.fonts
-cp ./ttf/*.bfp ~/.fonts
+cp ./ttf/*.pfb ~/.fonts
 
 fc-cache -f -v
 
