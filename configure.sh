@@ -25,13 +25,13 @@ sudo apt-get install inkscape
 sudo apt-get install xdotool figlet
 sudo apt-get remove clipit
 
-cd ../fonts
+cd ./fonts
 ./fonts.sh
 cd ..
 
 echo -e "\e[34m"
 
-fonts (maybe) installed
+fonts \(maybe\) installed
 
 else
     echo not installing packages
