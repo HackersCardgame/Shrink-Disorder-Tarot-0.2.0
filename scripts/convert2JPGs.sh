@@ -4,7 +4,12 @@
   mkdir --parents ../jpg/$1
 
 
-  find ../png/$l/ -name '*.png' >./jpg_$1.txt
+  find ../png/$1/ -name '*.png' >./jpg_$1.txt
+
+echo liste:
+cat ./jpg_$1.txt
+
+
 
   for f in $(cat ./jpg_$1.txt)
   do
