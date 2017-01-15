@@ -32,7 +32,8 @@ if echo "$answer" | grep -iq "^y"
 
   echo -e "\e[34m
 
-fonts \(maybe\) installed
+fonts maybe installed
+\e[0m
 "
 
  else
