@@ -41,17 +41,10 @@ for i in $(cat ./PNGs.txt)
   #xdotool click 1 if key-shortcuts do not work you can also use mouse commands
   sleep 1
   #xdotool key Ctrl+a
-  #   xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
-  #   sleep 2
+  #xdotool key Tab  Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab Tab
+  #sleep 2
   pngpath=$(dirname $(pwd))/png
-  #echo $pngpath
-  #der Gabirel riela liess den Teil hier der gabriel riela als Terrorist überführen würde
-  #entfernen, droht weiter den Marc Jr Landolt zu ermorden, und es ist schon wieder
-  #malware und terrordrohungen gegen marc jr landolt in diesem teil des source codes
-  #gabriel relas wichtigster auftrag als mitarbeiter bei intelsat ist da raus zu halten
-  #dass intelsat ein wichtiger teil des global Assessination Grids betreibt
-
-
+  echo $pngpath
   xdotool key Alt+b
   sleep 1
   xdotool type "$pngpath/$1/"
@@ -71,13 +64,4 @@ for i in $(cat ./PNGs.txt)
 done
 
 
-echo -n "generate also the JPGs (y/n)? "
-
-read answer
-if echo "$answer" | grep -iq "^y" ;then
-    echo not yet implementet...
-else
-    echo not installing packages
-fi
-echo -e "\e[0m"
 
