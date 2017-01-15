@@ -13,12 +13,20 @@ cd ./unzipped
 find . -name '*.TTF' -exec mv '{}' ../ttf/ \;
 find . -name '*.ttf' -exec mv '{}' ../ttf/ \;
 
+#somehow this bitstream charter went into my system fonts...
+find . -name '*.afm' -exec mv '{}' ../ttf/ \;
+find . -name '*.bfp' -exec mv '{}' ../ttf/ \;
+
 cd ..
 
 mkdir ~/.fonts
 
 cp ./ttf/*.ttf ~/.fonts
 cp ./ttf/*.TTF ~/.fonts
+
+
+cp ./ttf/*.afm ~/.fonts
+cp ./ttf/*.bfp ~/.fonts
 
 fc-cache -f -v
 
