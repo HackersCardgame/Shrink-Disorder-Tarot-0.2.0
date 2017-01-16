@@ -11,6 +11,7 @@
 
    echo "../".$_GET["dir"]."/*.*<br>";
    echo "flipping=". $_GET["flipping"]."<br>";
+   echo "display=" . $_GET["display"]."<br>";
 
    $files = glob("../".$_GET["dir"]."/*.*");
 
@@ -39,7 +40,9 @@ if ($_GET["flipping"]!=="false") {
 }
 
 if ($_GET["flipping"]=="false") {
- echo '<iframe frameBorder="0" text-align=center height=330 width=240 src="'.$image.'"></iframe> ';
+ echo '<a href="'.$image.'" target="_blank"><font color=red><b>'.$image.'</b></font><br>';}
+if ($_GET["display"]!=="false") {
+ echo  '<iframe frameBorder="0" text-align=center width=90% src="'.$image.'"></iframe></a><br> ';
 }
 
 } else {
