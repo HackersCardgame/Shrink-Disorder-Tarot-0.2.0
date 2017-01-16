@@ -1,0 +1,1 @@
+../assembled/IT/A6/templateA6.svg

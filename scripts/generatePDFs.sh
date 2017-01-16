@@ -26,7 +26,7 @@ mkdir -p ../pdf/$1/A4
 mkdir -p ../pdf/$1/A6
 
 
- /usr/bin/inkscape &
+# /usr/bin/inkscape &
 
 counter=0
 
