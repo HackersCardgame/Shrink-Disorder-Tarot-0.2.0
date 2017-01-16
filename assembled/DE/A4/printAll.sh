@@ -42,9 +42,9 @@ read answer
 find . -name "*-*.svg" >./print.txt
 
 
-echo -e "\e[34mPlease put $(cat ./print.txt |wc -l) A6 Cards \e[31m
+echo -e "\e[34mPlease put $(cat ./print.txt |wc -l) A4 Sheets \e[31m
 "
-figlet -w 120 -f banner $(cat ./print.txt |wc -l) A6-Cards 
+figlet -w 120 -f banner $(cat ./print.txt |wc -l) A4-Sheets
 echo -e "into your default printer\e[0m some printers have issues with that much cards so\e[34m this script will wait after 10 cards \e[0m "
 
 echo -e "
@@ -82,7 +82,7 @@ counter=0
    let counter=counter+1 
    if (( $counter % 10 == 0 )) 
    then
-     echo -e "\e[34mPlease put the next 10 A6 Cards\e[31m into your DEFAULT PRINTER  \e[0m"
+     echo -e "\e[34mPlease put the next 10 A4 Sheets (250g/m²) \e[31m into your DEFAULT PRINTER  \e[0m"
 
      figlet -f banner 10 A4-Sheets
 
@@ -100,7 +100,7 @@ else
     echo not not printing
 fi
 
-echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the templateA4 if your printer has no offset, continue" (y/n)? "
+echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the template A4 if your printer has no offset, continue" (y/n)? "
 read answer
 if echo "$answer" | grep -iq "^y"
 then
