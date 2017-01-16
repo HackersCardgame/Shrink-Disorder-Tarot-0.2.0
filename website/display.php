@@ -41,7 +41,7 @@ if ($_GET["flipping"]!=="false") {
 
 if ($_GET["flipping"]=="false") {
  echo '<a href="'.$image.'" target="_blank"><font color=red><b>'.$image.'</b></font><br>';}
-if ($_GET["display"]!=="false") {
+if ($_GET["display"]=="true") {
  echo  '<iframe frameBorder="0" text-align=center width=90% src="'.$image.'"></iframe></a><br> ';
 }
 
