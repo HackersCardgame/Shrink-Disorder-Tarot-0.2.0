@@ -1,8 +1,0 @@
-../assembled/FR/A6/templateA6.svg
-../assembled/FR/A6/t6-t1.svg
-../assembled/FR/A6/p5-c2.svg
-../assembled/FR/A6/t9-t5.svg
-../assembled/FR/A6/t4-t10.svg
-../assembled/FR/A6/last.svg
-../assembled/FR/A6/t3-t8.svg
-../assembled/FR/A6/t2-t7.svg

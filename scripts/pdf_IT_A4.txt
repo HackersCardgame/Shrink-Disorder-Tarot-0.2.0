@@ -1,2 +1,0 @@
-../assembled/IT/A4/backA4.svg
-../assembled/IT/A4/templateA4.svg
