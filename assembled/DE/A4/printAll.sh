@@ -1,6 +1,9 @@
 #!/bin/bash
 
+sudo ls
+
 xdg-open ../../../website/images/PrinterSettings.png
+sudo system-config-printer
 
 echo -n "Press [ENTER] if you changed the settings."
 read answer
