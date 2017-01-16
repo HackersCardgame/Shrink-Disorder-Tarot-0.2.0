@@ -74,7 +74,7 @@ counter=0
    xdotool key ctrl+p
    sleep 2
    xdotool key KP_Enter
-   sleep 5
+   sleep 15
    xdotool key alt+F4
 
    echo printed $i
