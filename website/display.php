@@ -64,7 +64,7 @@ if ($mode=="flip") {
 }
 
 if ($mode=="list") {
- echo '<br><a href="'.$image.'" target="_blank"><font color=red><b>'.$image.'</b></font>';
+ echo '<br> * * * <a href="'.$image.'" target="_blank"><font color=red><b>'.$image.'</b></font>';
 }
 
 if ($mode=="display") {
