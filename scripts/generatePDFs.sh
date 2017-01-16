@@ -19,7 +19,7 @@ mv ~/PDF/* ~/PDF/oldPDFs
 
 
 find ../assembled/$1/A4 -name "*.svg" >./pdf_$1_A4.txt
-#find ../assembled/$1/A6 -name "*.svg" >./pdf_$1_A6.txt
+find ../assembled/$1/A6 -name "*.svg" >./pdf_$1_A6.txt
 
 echo making directories
 mkdir -p ../pdf/$1/A4
