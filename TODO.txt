@@ -330,4 +330,5 @@ x=100; loop
 ☐ "Männergrippe"-Karte
  das S in Männergrippe steht für Tapfer
 
-
+☐ Anne Frank und Oskar Schindler Archetypen Karte zur Sophie Scholl karte
+   => Gleiche Werte, anderer Ausgang/Werdegang, Geschichte
