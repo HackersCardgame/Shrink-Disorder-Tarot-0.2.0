@@ -22,9 +22,7 @@ fi
 echo -e "
 
 to edit the current template press \e[31m[ENTER] or copy a given template to ./template/back_A6.svg in another terminal window\e[0m
-this script will also open the first card in the EN directory, so you can print both sides of test sheet
-
-"
+this script will also open the first card in the EN directory, so you can print both sides of test sheet"
 read
 
 

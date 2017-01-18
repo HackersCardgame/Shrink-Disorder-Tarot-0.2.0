@@ -100,20 +100,25 @@ else
     echo not not printing
 fi
 
-echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the template A4 if your printer has no offset, continue" (y/n)? "
+
+
+
+echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the templateA4.svg if your printer has no offset, continue" (y/n)? "
 read answer
 if echo "$answer" | grep -iq "^y"
 then
 
   # there is already an offset form 2mm
-  /usr/bin/inkscape ./backA4.svg &
+  /usr/bin/inkscape ../../../template/back_A4.svg &
   sleep 5
   xdotool key ctrl+p
 
 else
 
-  /usr/bin/inkscape ./templateA4.svg &
+  /usr/bin/inkscape ../../../template/templateA4.svg &
   sleep 5
   xdotool key ctrl+p
 
 fi
+
+

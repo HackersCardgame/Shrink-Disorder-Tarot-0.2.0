@@ -1,6 +1,9 @@
 #!/bin/bash
 
-xdg-open ./PrinterSettings.png
+sudo ls
+
+xdg-open ../../../website/images/PrinterSettings.png
+sudo system-config-printer
 
 echo -n "Press [ENTER] if you changed the settings."
 read answer
@@ -15,7 +18,7 @@ echo "
 echo -n "install required debian jessie packages (y/n)? "
 read answer
 if echo "$answer" | grep -iq "^y" ;then
-sudo apt-get install xdotool figlet
+sudo apt-get install xdotool figlet inkscape
 else
     echo not installing packages
 fi
@@ -39,9 +42,9 @@ read answer
 find . -name "*-*.svg" >./print.txt
 
 
-echo -e "\e[34mPlease put $(cat ./print.txt |wc -l) A6 Cards \e[31m
+echo -e "\e[34mPlease put $(cat ./print.txt |wc -l) A4 Sheets \e[31m
 "
-figlet -w 120 -f banner $(cat ./print.txt |wc -l) A6-Cards 
+figlet -w 120 -f banner $(cat ./print.txt |wc -l) A4-Sheets
 echo -e "into your default printer\e[0m some printers have issues with that much cards so\e[34m this script will wait after 10 cards \e[0m "
 
 echo -e "
@@ -71,7 +74,7 @@ counter=0
    xdotool key ctrl+p
    sleep 2
    xdotool key KP_Enter
-   sleep 5
+   sleep 15
    xdotool key alt+F4
 
    echo printed $i
@@ -79,7 +82,7 @@ counter=0
    let counter=counter+1 
    if (( $counter % 10 == 0 )) 
    then
-     echo -e "\e[34mPlease put the next 10 A6 Cards\e[31m into your DEFAULT PRINTER  \e[0m"
+     echo -e "\e[34mPlease put the next 10 A4 Sheets (250g/m²) \e[31m into your DEFAULT PRINTER  \e[0m"
 
      figlet -f banner 10 A4-Sheets
 
@@ -97,20 +100,25 @@ else
     echo not not printing
 fi
 
-echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the templateA4 if your printer has no offset, continue" (y/n)? "
+
+
+
+echo -n warning there is an offset of 2mm in this for my mfc9460cdn, use the templateA4.svg if your printer has no offset, continue" (y/n)? "
 read answer
 if echo "$answer" | grep -iq "^y"
 then
 
   # there is already an offset form 2mm
-  /usr/bin/inkscape ./backA4.svg &
+  /usr/bin/inkscape ../../../template/back_A4.svg &
   sleep 5
   xdotool key ctrl+p
 
 else
 
-  /usr/bin/inkscape ./templateA4.svg &
+  /usr/bin/inkscape ../../../template/templateA4.svg &
   sleep 5
   xdotool key ctrl+p
 
 fi
+
+
