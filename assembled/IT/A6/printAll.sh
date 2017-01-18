@@ -103,13 +103,13 @@ if echo "$answer" | grep -iq "^y"
 then
 
   # there is already an offset form 2mm
-  /usr/bin/inkscape ./backA4.svg &
+  /usr/bin/inkscape ../../../template/back_A6.svg &
   sleep 5
   xdotool key ctrl+p
 
 else
 
-  /usr/bin/inkscape ./templateA4.svg &
+  /usr/bin/inkscape ../../../template/templateA6.svg &
   sleep 5
   xdotool key ctrl+p
 
