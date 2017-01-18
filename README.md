@@ -34,19 +34,19 @@ https://www.youtube.com/watch?v=K0uYfV4gpes
 
 
 <video height="300" controls>
-  <source src="./website/HOWTO/Printing-Cards.mp4" type="video/mp4">
+  <source src="http://marclandolt.ch/Shrink-Disorder-Tarot//website/HOWTO/Printing-Cards.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> . . . <video height="300" controls>
-  <source src="./website/HOWTO/deploy.mp4" type="video/mp4">
+  <source src="http://marclandolt.ch/Shrink-Disorder-Tarot//website/HOWTO/deploy.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
-<br><br><a href="./website/HOWTO/">Dokumentation</a>
+<br><br><a href="http://marclandolt.ch/Shrink-Disorder-Tarot//website/HOWTO/">Dokumentation</a>
 
 <br><br><br>
 <h2><font id=mitmachen color=lightgreen>Beispiel "Stimmen Hören"</font></h2>
 (Mitmachen erwünscht)<br><br>
 
- <iframe text-align=center width=1400 height=730 src="./website/display.php?dir=website/cardcombinations/virtual-voices/DE"></iframe> 
+ <iframe text-align=center width=1400 height=730 src="http://marclandolt.ch/Shrink-Disorder-Tarot//website/display.php?dir=website/cardcombinations/virtual-voices/DE"></iframe> 
 
 
 (how to get the complete repository you can see in the Video "QuickStart")
