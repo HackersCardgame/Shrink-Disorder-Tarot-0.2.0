@@ -28,7 +28,7 @@ you can use GNU Debian Linux Jessie, you can boot it from a USB3.0 Stick, ask th
 
 Short Video to show how to create a card, about 5 Minutes:
 
-<a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" height=300></a> <a href="https://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/Printing-Cards.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/template.svg" height=300></a
+<a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" height=300></a> <a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/Printing-Cards.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/template.svg" height=300></a
 
 
 <a href="http://https://www.youtube.com/watch?v=u3Ob_HHFGAg&t=28s"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/example-use.jpg" height=250></a> <a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/deploy.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/deploy.png" height=250></a>
