@@ -33,7 +33,7 @@ Short Video to show how to create a card, about 5 Minutes:
 https://www.youtube.com/watch?v=K0uYfV4gpes
 
 
-<a href="http://marclandolt.ch/Shrink-Disorder-Tarot/website/HOWTO/Printing-Cards.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" height=300></a> <a href="http://marclandolt.ch/Shrink-Disorder-Tarot//website/HOWTO/deploy.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/deploy.png" height=300></a>
+<a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/Printing-Cards.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" height=300></a> <a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/deploy.mp4"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/deploy.png" height=300></a>
 
 
 
