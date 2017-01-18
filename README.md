@@ -26,10 +26,10 @@ you can use GNU Debian Linux Jessie, you can boot it from a USB3.0 Stick, ask th
 * Download Template: <a href="https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/HOWTO/InkscapeVorlageTarot.svg">https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/HOWTO/InkscapeVorlageTarot.svg</a>
 * Open the Template
 
+Short Video to show how to create a card, about 5 Minutes:
+<a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" height=300></a> <a href="https://www.youtube.com/watch?v=u3Ob_HHFGAg&t=28s"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/template.svg" height=300></a>
 
-<a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/"><img src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/HOWTO.png" width=400></a>
-
-Short Video to show how to create a card, about 5 Minutes: 
+ 
 https://www.youtube.com/watch?v=K0uYfV4gpes
 
 
