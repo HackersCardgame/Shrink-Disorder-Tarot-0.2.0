@@ -21,9 +21,8 @@ fi
 
 echo -e "
 
-to edit the current template press \e[1m[ENTER]\e[0m or copy a given template to ./template/back_A6.svg
-
-this script will also open the first other card in the EN directory, so you can print both sides of the test card sheet
+to edit the current template press \e[31m[ENTER] or copy a given template to ./template/back_A6.svg in another terminal window\e[0m
+this script will also open the first card in the EN directory, so you can print both sides of test sheet
 
 "
 read
@@ -33,6 +32,8 @@ read
 /usr/bin/inkscape ./template/back_$1.svg &
 
 find ./assembled/EN/$1 -name "*-*.svg" >./cards.txt
+
+sleep 10
 
 /usr/bin/inkscape $(head ./cards.txt -n1) &
 
