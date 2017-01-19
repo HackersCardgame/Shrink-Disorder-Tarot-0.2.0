@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get install qrencode
+
+#qrencode -o dev.png https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0
+#qrencode -o website.png http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0
+
+qrencode -t svg -o dev.svg https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0
+qrencode -t svg -o website.svg http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0
