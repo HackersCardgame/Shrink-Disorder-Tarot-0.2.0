@@ -70,7 +70,7 @@ Or FARCRY-SkinnerBOX **beats** 1960s-SkinnerBOX
 
 May this repository be under Creative Commons by-nc-sa and may these be broken, in case kids and jounger people can be protected by changing the License
 
-![](https://raw.githubusercontent.com/braindef/Shrink-Disorder-Tarot/master/by-nc-sa.png)
+![](https://raw.githubusercontent.com/braindef/Shrink-Disorder-Tarot-0.2.0/master/website/images/by-nc-sa.png)
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 For the Patent-Trolls, i tried to use Images, Fonts... that are Creative Commons or free, if something went wrong and i unfortunately took something that is illegal, please tell me in "issues" so i can remove it...
