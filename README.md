@@ -44,9 +44,6 @@ Short Video to show how to create a card, about 5 Minutes:
 </video> 
 <br><br><a href="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/HOWTO/">Documentation</a>
 
-<br><br><br>
-<h2><font id=mitmachen color=lightgreen>Beispiel "Stimmen Hören"</font></h2>
-(Mitmachen erwünscht)<br><br>
 
  <iframe text-align=center width=1400 height=730 src="http://marclandolt.ch/Shrink-Disorder-Tarot-0.2.0/website/display.php?dir=website/cardcombinations/virtual-voices/DE"></iframe> 
 
