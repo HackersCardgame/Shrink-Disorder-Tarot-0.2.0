@@ -23,7 +23,7 @@ you can use GNU Debian Linux Jessie, you can boot it from a USB3.0 Stick, ask th
 
 ### QuickStart for creating your own cards:
 * Download and install <a href="https://inkscape.org/de/">Inkscape</a>
-* Download Template: <a href="https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/HOWTO/InkscapeVorlageTarot.svg">https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/HOWTO/InkscapeVorlageTarot.svg</a>
+* Download Template: <a href="https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/website/HOWTO/template.svg">https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/website/HOWTO/template.svg</a>
 * Open the Template
 
 Short Video to show how to create a card, about 5 Minutes:
