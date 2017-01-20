@@ -21,6 +21,8 @@
 - https://www.youtube.com/watch?v=L5aITiIZp9U (Just run the printAll.sh)
 you can use GNU Debian Linux Jessie, you can boot it from a USB3.0 Stick, ask the local Nerd/Sheldon/Geek in your social network, he was trained to help you, WARNING, he will bite you if you are unfair to him :)
 
+with some few changes in the scripts in ./scripts it should work on ubuntu too...
+
 ### QuickStart for creating your own cards:
 * Download and install <a href="https://inkscape.org/de/">Inkscape</a>
 * Download Template: <a href="https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/website/HOWTO/template.svg">https://github.com/braindef/Shrink-Disorder-Tarot-0.2.0/blob/master/website/HOWTO/template.svg</a>
