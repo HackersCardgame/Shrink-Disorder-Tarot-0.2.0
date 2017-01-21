@@ -15,6 +15,8 @@
  - ~1950: CIA MKULTRA Projects 
  - ~1970: Explosion of the Numbers of Mental Deseases (DSM)
 
+if you have **100 Cards** and use **only 3 at a time**, you have alread 161700 recombinations of cards: 
+https://www.wolframalpha.com/input/?i=binomial(100,3)
 
 ### QuickStart / HOWTO create a complete card deck:
 
