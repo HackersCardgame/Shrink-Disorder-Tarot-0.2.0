@@ -1,7 +1,3 @@
-
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,11 +12,13 @@
 
     <style media="screen">
     .container {
-      width: 180px;
-      height: 200px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      width: 220px;
+      height: 300px;
       position: relative;
-      margin: 0 auto 40px;
-      border: 1px solid #FFF;
+/*      margin: 0 auto 40px;
+      border: 1px solid #FFF; */
       -webkit-perspective: 800px;
          -moz-perspective: 800px;
            -o-perspective: 800px;
@@ -31,6 +29,8 @@
       width: 100%;
       height: 100%;
       position: absolute;
+      top:50%;
+      margin-top:-130px;
       -webkit-transition: -webkit-transform 3s;
          -moz-transition: -moz-transform 3s;
            -o-transition: -o-transform 3s;
@@ -50,13 +50,13 @@
 
     #card figure {
       display: block;
-      height: 100%;
+/*      height: 100%;
       width: 100%;
       line-height: 260px;
       color: white;
       text-align: center;
       font-weight: bold;
-      font-size: 140px;
+      font-size: 140px; */
       position: absolute;
       -webkit-backface-visibility: hidden;
          -moz-backface-visibility: hidden;
@@ -78,7 +78,7 @@
   </style>
 
 </head>
-<body  bgcolor="#FFF">
+<body bgcolor="#FFF">
   <section class="container">
     <div id="card">
       <figure id="flip" class="front"><a href="<?php echo $_GET["back"] ?>" target="_blank"><img src="<?php echo $_GET["back"] ?>" width=200></a></figure>
@@ -88,11 +88,9 @@
   <script src="./js/utils.js"></script><script src="./js/flip-card.js"></script>
 <script>
 var myVar = setInterval(function(){ myTimer() }, <?php echo(rand(7000,30000)); ?>);
-
 function myTimer() {
   document.getElementById('flip').click();
 }
 </script>
-
 </body>
 </html>

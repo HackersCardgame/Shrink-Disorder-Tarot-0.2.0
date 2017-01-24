@@ -24,7 +24,7 @@ else {
 }
 
 if (empty($_GET["width"])) {
- $width=240; 
+ $width=230; 
 }
 else {
  $height=$_GET["width"];
@@ -60,7 +60,7 @@ if (in_array($ext, $supported_file)) {
 
 
 if ($mode=="flip") {
- echo '<iframe frameBorder="0" text-align=center height=330 width=240 src="./card.php?front='.$image .'&back=back.jpg"></iframe> ';
+ echo '<iframe frameBorder="0" text-align=center height=330 width=230 src="./card.php?front='.$image .'&back=back.jpg"></iframe> ';
 }
 
 if ($mode=="list") {
