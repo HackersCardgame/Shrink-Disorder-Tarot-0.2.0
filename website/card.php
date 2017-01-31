@@ -10,12 +10,30 @@
   
   <link rel="stylesheet" href="./css/style.css" media="screen" />
 
+<?php
+if (empty($_GET["width"])) {
+$width=220;
+}
+else {
+$width=$_GET["width"];
+}
+
+if (empty($_GET["height"])) {
+$height=300;
+}
+else {
+$height=$_GET["height"];
+}
+
+?>
+
+<!-d as mÃ¼sste mna(n) dann mal noch ein bisschen schÃ¶ner programmieren ->
     <style media="screen">
     .container {
       overflow-y: hidden;
       overflow-x: hidden;
-      width: 220px;
-      height: 300px;
+      width: <?php echo $width?>px;
+      height: <?php echo $height?>px;
       position: relative;
 /*      margin: 0 auto 40px;
       border: 1px solid #FFF; */
@@ -79,10 +97,20 @@
 
 </head>
 <body bgcolor="#FFF">
+
+<?php
+if (empty($_GET["width"])) {
+ $width=200;
+}
+else {
+ $width=$_GET["width"]-30;
+}
+?>
+
   <section class="container">
     <div id="card">
-      <figure id="flip" class="front"><a href="<?php echo $_GET["back"] ?>" target="_blank"><img src="<?php echo $_GET["back"] ?>" width=200></a></figure>
-      <figure id="flip" class="back"><a href="<?php echo $_GET["front"] ?>" target="_blank"><img src="<?php echo $_GET["front"] ?>" width=200></a></figure>
+      <figure id="flip" class="front"><a href="<?php echo $_GET["back"] ?>" target="_blank"><img src="<?php echo $_GET["back"] ?>" width="<?php echo $width?>"></a></figure>
+      <figure id="flip" class="back"><a href="<?php echo $_GET["front"] ?>" target="_blank"><img src="<?php echo $_GET["front"] ?>" width="<?php echo $width?>"></a></figure>
     </div>
   </section>
   <script src="./js/utils.js"></script><script src="./js/flip-card.js"></script>

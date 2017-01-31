@@ -27,7 +27,7 @@ if (empty($_GET["width"])) {
  $width=230; 
 }
 else {
- $height=$_GET["width"];
+ $width=$_GET["width"];
 }
 
 if (empty($_GET["height"])) {
@@ -57,10 +57,13 @@ $supported_file = array(
 $ext = strtolower(pathinfo($image, PATHINFO_EXTENSION));
 if (in_array($ext, $supported_file)) {
 
-
-
 if ($mode=="flip") {
- echo '<iframe frameBorder="0" text-align=center height=330 width=230 src="./card.php?front='.$image .'&back=back.jpg"></iframe> ';
+ echo '<iframe frameBorder="0" text-align=center height="'.$height.'" width="'.$width.'" src="./card.php?front='.$image .'&back=back.jpg&width='.$width.'"></iframe> ';
+
+#if ($mode=="flip") {
+# echo '<iframe frameBorder="0" text-align=center height="'.$height.'" width="'.$width.'" src="./card.php?front='.$image .'&back=back.jpg&width="'.$width.'"></iframe> ';
+ echo "x".$width."x";
+
 }
 
 if ($mode=="list") {
