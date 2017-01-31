@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.no-float-left {
+    text-align: center;
+}
+
+
 .overlay figcaption {
     position: absolute;
     z-index: 1000;
