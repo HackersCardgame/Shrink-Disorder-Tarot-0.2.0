@@ -58,11 +58,7 @@ $ext = strtolower(pathinfo($image, PATHINFO_EXTENSION));
 if (in_array($ext, $supported_file)) {
 
 if ($mode=="flip") {
- echo '<iframe frameBorder="0" text-align=center height="'.$height.'" width="'.$width.'" src="./card.php?front='.$image .'&back=back.jpg&width='.$width.'"></iframe> ';
-
-#if ($mode=="flip") {
-# echo '<iframe frameBorder="0" text-align=center height="'.$height.'" width="'.$width.'" src="./card.php?front='.$image .'&back=back.jpg&width="'.$width.'"></iframe> ';
- echo "x".$width."x";
+ echo '<iframe frameBorder="0" text-align=center height="'.$height.'" width="'.($width+20).'" src="./card.php?front='.$image .'&back=back.jpg&width='.$width.'&height='.$height.'"></iframe> ';
 
 }
 

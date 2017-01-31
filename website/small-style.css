@@ -1,9 +1,14 @@
 html {
-padding: 8px 25px;
-list-style: none;
+/*padding: 8px 25px;
+list-style: none; */
 background: #282828;
 color: #ffffff; 
-font-family: monospace; }
+font-family: monospace; 
+}
+
+iframe {
+overflow:hidden
+}
 
 /* unvisited link */
 a:link {

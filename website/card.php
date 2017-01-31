@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="overflow:hidden;">
 <head>
   <meta charset="utf-8" />
   
@@ -48,7 +48,7 @@ $height=$_GET["height"];
       height: 100%;
       position: absolute;
       top:50%;
-      margin-top:-130px;
+      margin-top:-<?php echo ($height/2)?>px;
       -webkit-transition: -webkit-transform 3s;
          -moz-transition: -moz-transform 3s;
            -o-transition: -o-transform 3s;
@@ -98,14 +98,6 @@ $height=$_GET["height"];
 </head>
 <body bgcolor="#FFF">
 
-<?php
-if (empty($_GET["width"])) {
- $width=200;
-}
-else {
- $width=$_GET["width"]-30;
-}
-?>
 
   <section class="container">
     <div id="card">
