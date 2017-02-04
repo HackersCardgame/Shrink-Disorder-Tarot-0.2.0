@@ -336,3 +336,11 @@ x=100; loop
 
 ☐ Anne Frank und Oskar Schindler Archetypen Karte zur Sophie Scholl karte
    => Gleiche Werte, anderer Ausgang/Werdegang, Geschichte
+
+psychiatrie karte:
+chaos radio 152: hacker landen in der psychiatrie
+berlin calling: also wrong
+real reason: to own your devices at home during you are locked in the
+             mental institution, even you devices you carry with you,
+             and even if they are seald with sealing wax, and without
+             a warrant of a judge
